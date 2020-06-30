@@ -1,0 +1,118 @@
+{
+   "CardCode" : "C20000",
+   "CardName" : "Maxi-Teq do Brasil LTDA",
+   "CardType" : "cCustomer",
+   "Phone1" : "11-5555-1122",
+   "Phone2" : null,
+   "U_SKILL_NFSEEMAIL" : "a@a.com.br",
+   "EmailAddress": "a@a.com.br",
+   "BPAddresses" : [
+      {
+         "AddressName" : "Rio de Janeiro",
+         "Street" : "Senador Dantas",
+         "Block" : "Centro",
+         "ZipCode" : "20031-923",
+         "City" : "Rio de Janeiro",
+         "County" : "3656",
+         "Country" : "BR",
+         "State" : "RJ",
+         "BuildingFloorRoom" : "1o andar",
+         "AddressType" : "bo_ShipTo",
+         "TypeOfAddress" : "Rua",
+         "StreetNo" : "1974",
+         "BPCode" : "C20000"
+      },
+      {
+         "AddressName" : "Rio de Janeiro",
+         "Street" : "Senador Dantas",
+         "Block" : "Centro",
+         "ZipCode" : "20031-923",
+         "City" : "Rio de Janeiro",
+         "County" : "3656",
+         "Country" : "BR",
+         "State" : "RJ",
+         "BuildingFloorRoom" : "1o andar",
+         "AddressType" : "bo_BillTo",
+         "TypeOfAddress" : "Rua",
+         "StreetNo" : "1974",
+         "BPCode" : "C20000"
+      }
+   ],
+   "BPPaymentMethods" : [
+      {
+         "PaymentMethodCode" : "Boleto-Itau",
+         "RowNumber" : 0,
+         "BPCode" : "C20000"
+      }
+   ],
+   "BPFiscalTaxIDCollection" : [
+      {
+         "Address" : "",
+         "CNAECode" : -1,
+         "TaxId0" : "94.549.548/0001266",
+         "TaxId1" : "114.818.785.112",
+         "TaxId3" : "",
+         "TaxId4" : "",
+         "BPCode" : "C20000",
+         "AddrType" : "bo_ShipTo"
+      },
+      {
+         "Address" : "Rio de Janeiro",
+         "CNAECode" : 410,
+         "TaxId0" : "94.549.548/0002-10",
+         "TaxId1" : "85.586.180",
+         "TaxId3" : "",
+         "TaxId4" : "",
+         "BPCode" : "C20000",
+         "AddrType" : "bo_ShipTo"
+      }
+   ]
+}
+
+
+
+
+{
+   "CardCode" : Codigo do Parceiro - Dependendo da base eh criado automaticamente,
+   "CardName" : Razao social,
+   "CardType" : C cliente/ S - Fornecedor .... Tambem pode ser usado cCustomer ou cSupplier,
+   "Phone1" : Telefone ,
+   "Phone2" : DDD,
+   "EmailAddress": Email do cidadao,
+   "U_SKILL_NFSEEMAIL" : E-Mail para envio da NFSE,
+   "BPAddresses" : [
+      {
+         "AddressName" : Chave do endereco (pode ser repetido entre endereco de cobranca e entrega),
+         "Street" : logradouro,
+         "Block" : bairro,
+         "ZipCode" : cep,
+         "City" : cidade,
+         "County" : ID Municipio (é uma lista com ids dentro do SAP),
+         "Country" : Pais com dois digitos (BR),
+         "State" : Estado com dois digitos (SP),
+         "BuildingFloorRoom" : Complemento,
+         "AddressType" : bo_ShipTo - Endereço de entrega / bo_BillTo - Endereço de cobrança,
+         "TypeOfAddress" : Tipo logradouro (Rua, Av ...),
+         "StreetNo" : Numero,
+         "BPCode" : Codigo PN - Importante no momento da atualização - Na inserção não é necessário
+      }
+   ],
+   "BPPaymentMethods" : [
+      {
+         "PaymentMethodCode" : Codigo Forma de pagamento - Depende da Base - Necessario enviar para vincular as formas de pagamento com os clientes.
+                                 Caso não utilize esse cadastro na base, não é necessário enviar.
+      }
+   ],
+   "BPFiscalTaxIDCollection" : [
+      {
+         "Address" : Id Do Endereço (tem que estar na lista BPAddresses),
+         "CNAECode" : Codigo CNAE,
+         "TaxId0" : CNPJ,
+         "TaxId1" : IE,
+         "TaxId3" : IM,
+         "TaxId4" : CPF,
+         "BPCode" : Codigo PN - Importante no momento da atualização - Na inserção não é necessário,
+         "AddrType" : bo_ShipTo - Endereço de entrega / bo_BillTo - Endereço de cobrança,
+      }
+   ]
+}

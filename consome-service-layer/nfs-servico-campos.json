@@ -1,0 +1,89 @@
+{
+   "DocDate" : "2012-01-22",
+   "TaxDate" : "2012-01-22",
+   "DocDueDate" : "2012-02-22",
+   "CardCode" : "C20000",
+   "Comments" : "Based On Sales Quotations 1. Based On Sales Orders 1. Based On Deliveries 1.",
+   "PaymentGroupCode" : 16,
+   "SalesPersonCode" : 2,
+   "SeriesString" : "1",
+   "PaymentMethod" : null,
+   "BPL_IDAssignedToInvoice" : null,
+   "SequenceCode" : 27,
+   "SequenceSerial" : 194,
+   "SequenceModel" : "39",
+   "OpeningRemarks" : "",
+   "ClosingRemarks" : "",
+
+   "U_SKILL_EndServ": "",
+   "U_SKILL_ServRua": "",
+   "U_SKILL_ServNumero": "",
+   "U_SKILL_ServComple": "",
+   "U_SKILL_ServBairro": "",
+   "U_SKILL_ServCEP": "",
+   "U_SKILL_ServTipLog": "",
+   "U_SKILL_ObraPref": "",
+   "U_SKILL_NumEncapsula": "",
+   "U_SKILL_TipoTrib": "",
+   "U_SKILL_tsCodigoObra": "",
+   "U_SKILL_tsART": "",
+   "DocumentLines" : [
+      {
+         "ItemCode" : "A00001",
+         "ItemDescription" : "J.B. Impressora Officeprint 1420",
+         "Quantity" : 5.0,
+         "Price" : 1255.0,
+         "Usage" : 9,
+         "TaxCode" : "5101-001",
+         "CSTforPIS" : "01",
+         "CSTforCOFINS" : "01",
+         "WTLiable" : "tYES",
+         "U_SKILL_TotTribIBPT":""
+      }
+   ]
+}
+
+
+
+{
+   "DocDate" : data lancamento,
+   "TaxDate" : data emissao,
+   "DocDueDate" : data de vencimento,
+   "CardCode" : codigo cliente,
+   "Comments" : Observacao (opcional),
+   "PaymentGroupCode" : codigo condicao de pagamento - depende da base,
+   "SalesPersonCode" : codigo do PN (opcional),
+   "SeriesString" : serie obrigatoria,
+   "PaymentMethod" : codigo forma de pagamento - depende da base (opcional),
+   "BPL_IDAssignedToInvoice" : codigo da filial - obrigatorio se a base for multi-filial,
+   "SequenceCode" : codigo da sequencia fiscal - depende da base,
+   "SequenceModel" : codigo do modelo da nota - depende da base - obrigatorio ser uma de servico,
+   "OpeningRemarks" : observacoes iniciais (opcional),
+   "ClosingRemarks" : observacoes finais (opcional),
+   "U_SKILL_EndServ": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServRua": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServNumero": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServComple": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServBairro": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServCEP": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ServTipLog": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_ObraPref": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_NumEncapsula": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_TipoTrib": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_tsCodigoObra": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "U_SKILL_tsART": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual,
+   "DocumentLines" : [
+      {
+         "ItemCode" : codigo do item,
+         "ItemDescription" : descricao do servico (opcional),
+         "Quantity" : quantidade, para servico geralmente se manda 1,
+         "Price" : valor do serviço,
+         "Usage" : utilização para o SAP pegar o imposto - depende da base,
+         "TaxCode" : codigo imposto - geralmente o SAP pega automatico pela determinacao (opcional),
+         "CSTforPIS" : CST PIS,
+         "CSTforCOFINS" : CST COFINS,
+         "WTLiable" : sujeiro a IRPF sim(tYES) ou não (tNO),
+         "U_SKILL_TotTribIBPT": Campos de usuarios que devem ser preenchidos dependendo da operação de acordo com o manual
+      }
+   ]
+}

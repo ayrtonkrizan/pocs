@@ -1,0 +1,46 @@
+.box{
+    /* max-width: 250px;
+    max-height: 250px; */
+    height: 250px;
+    width: 250px;
+}
+
+.red{
+    background: red;
+}
+
+.blue{
+    background: blue;
+}
+
+.green{
+    background: green;
+}
+
+.flex-pai {
+    width: 80%;
+    height: 700px;
+    padding: 20px;
+    background: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+df-messenger{
+    background-color: red;
+
+}
+
+.df-messenger-wrapper {
+    background-color: red !important;
+    
+}

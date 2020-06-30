@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste Leitor Biometrico</h1>
+    <canvas id="fingerframe" height="240" width="160"></canvas>
+    <div id='fptemplate'></div>
+    <form id='scanform'>
+        <input name="name" type="text" size="25" id="name">
+        <button onclick="return check()">Check</button>
+        <span id='result'></span>
+        <button id='btnCancel'>Cancel</button>
+    </form>
+    <script type="text/javascript" src="index.js"></script>
+    <script>onBodyLoad()</script>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function inStrGrp(src,reg)
+        {
+            var regex=new RegExp("[" + reg + "]","i");
+            return regex.test(src);
+        }
+        function check()
+        {	
+            var uname= document.getElementById('name').value
+            var bError=false
+        
+            if (uname.length==0)
+            {
+                window.alert("Name is required.\n")
+                return false
+            }
+            if (uname.indexOf("\\")>=0)
+                bError=true
+        
+            if (inStrGrp(uname,'/.:*?"<>| '))
+                bError=true
+            
+            if (bError)
+            {
+                window.alert('User name can not contain the following characters:\n \\/. :*?"<>|\n')
+                return false
+            }
+            document.scan.submit()
+            return true
+        }
+        //-->
+    </script>
+</body>
+</html>
